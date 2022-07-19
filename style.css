@@ -1,0 +1,29 @@
+#title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #c06161;
+    text-align: center;
+    margin-top:30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top:20px;
+}
+h4{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 5px;
+}
+
+#calculation{
+    width: 542px;
+    height: 812px;
+    background: #F8F8F8;
+}
