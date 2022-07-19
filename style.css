@@ -13,17 +13,32 @@ h2{
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
-    margin-top:20px;
+    margin-top:10px;
 }
 h4{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    padding: 5px;
+    padding: 2px;
+}
+input{
+    background: #DCDCDC;
+    border-radius:3px;
+    border:1px white solid;
 }
 
+
 #calculation{
-    width: 542px;
-    height: 812px;
-    background: #F8F8F8;
+    width: 500px;
+    height: 550px;
+    background:#F8F8F8;
+}
+button{
+    background-color: rgb(169, 122, 65);
+    border-radius:8px;
+    border:1px white solid;
+}
+#cal-btn{
+    display:flex;
+    justify-content:center;
 }
