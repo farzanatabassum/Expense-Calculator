@@ -38,3 +38,11 @@ button{
     border-radius:8px;
     border:1px white solid;
 }
+/* error */
+.notify-section{
+    color:red;
+   
+}
+#income-notify,#food-notify,#rent-notify,#cloth-notify,#expense-notify,#save-notify{
+    display: none;
+}
