@@ -1,3 +1,4 @@
+
 #title{
     font-weight: 700;
     font-size: 48px;
@@ -27,7 +28,7 @@ input{
     border:1px white solid;
 }
 
-
+/* calculation */
 #calculation{
     width: 500px;
     height: 550px;
@@ -43,6 +44,6 @@ button{
     color:red;
    
 }
-#income-notify,#food-notify,#rent-notify,#cloth-notify,#expense-notify,#save-notify{
+#income-notify,#food-notify,#rent-notify,#cloth-notify,#expense-notify,#save-notify,#remain-notify{
     display: none;
 }

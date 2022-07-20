@@ -16,6 +16,7 @@ function getExpenseValue(expenseId){
 }
 //for total expense
 function expenseTotalValue(id){
+  
     //for food
     const food=getExpenseValue('food');
     //food error message
@@ -29,6 +30,7 @@ function expenseTotalValue(id){
      const rentError=document.getElementById('rent-notify');
      if(isNaN(rent)||rent<1){
          rentError.style.display='block';
+         
      }
     //for clothes
     const cloth=getExpenseValue('cloth');
@@ -36,9 +38,11 @@ function expenseTotalValue(id){
      const clothError=document.getElementById('cloth-notify');
      if(isNaN(cloth)||cloth<1){
          clothError.style.display='block';
+      
      }
     //total expense
     const result=food+rent+cloth;
+      //total
     const total=document.getElementById(id);
     total.innerText=result;
     return result;
@@ -77,31 +81,35 @@ document .getElementById("calculate-btn").addEventListener('click',function(){
 document.getElementById("save-btn").addEventListener('click',function(){
     //for income
     const income=getIncomeValue();
+    const save=document.getElementById("save");
+    const saveError=document.getElementById('save-notify');
+    const saveValue=parseInt(save.value);
+   
+        
     //for save button
-    if(income>save){
-        const save=document.getElementById("save");
-        const saveValue=parseInt(save.value);
+    if(income>saveValue){
         const percentage=parseFloat(saveValue/100);
         const savingTotal=income*percentage;
         //Saving amount
         const saveText=document.getElementById("save-amount");
         saveText.innerText=parseFloat(savingTotal);
-         
-   
         const saveTotal=saveText.innerText;
          //total expenses
         const balanceTotal=updateBalance('balance');
         //remaining balance
         const remain=document.getElementById('remain');
         remain.innerText=balanceTotal-saveTotal;
+        
+        if(balanceTotal<saveTotal){
+            const remainError=document.getElementById('remain-notify');
+            remainError.style.display='block';
+
+        }
+        
         }
     else{
-        const saveError=document.getElementById('save-notify');
         saveError.style.display='block';
     }
     
-
-    
- 
 
 })

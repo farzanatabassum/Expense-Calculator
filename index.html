@@ -26,6 +26,7 @@
                     <h2>Income</h2>
                     <div>
                         <h4>Income: <input type="text" name="" id="income"> </h4>
+                      <!-- Error Message -->
                         <div class="notify-section">
                             <p id="income-notify">Please enter a positive number!!!</p>
                         </div>
@@ -35,6 +36,7 @@
                     <!-- food -->
                     <div>
                         <h4>Food:<input type="text" name="" id="food"> </h4>
+                    <!-- Error Message -->
                         <div class="notify-section">
                             <p id="food-notify">Please enter a positive number!!!</p>
                         </div>
@@ -42,6 +44,7 @@
                     <!-- Rent -->
                     <div>
                         <h4>Rent:<input type="text" name="" id="rent"></h4>
+                    <!-- Error Message -->
                         <div class="notify-section">
                             <p id="rent-notify">Please enter a positive number!!!</p>
                         </div>
@@ -49,7 +52,7 @@
                     <!-- Clothes-->
                     <div>
                         
-                        <h4>Clothes: <input type="text" name="" id="cloth"></h4>
+                        <h4>Clothes: <input type="text" name="" id="cloth"></h4>                <!-- Error Message -->
                         <div class="notify-section">
                             <p id="cloth-notify">Please enter a positive number!!!</p>
                         </div>
@@ -61,6 +64,7 @@
                     
                     <!-- Total Expenses -->
                     <h2>Total Expenses: <span id="total"></span></h2>
+                   <!-- Error Message -->
                     <div class="notify-section">
                         <p id="expense-notify">Expense is greater then Income!!!</p>
                     </div>
@@ -69,17 +73,23 @@
                     <!-- Save -->
 
                     <section class="d-flex">
-                        <h4>Save:<input type="text" name="" id="save"></h4> %
+                        <h4>Save:<input type="text" name="" id="save"></h4>  %
                         <!-- Save-btn -->
                         <button id="save-btn">Save</button>
-                        <div class="notify-section">
-                            <p id="save-notify">Save percentage is greater than Income!!!</p>
-                        </div>
+                        
                     </section>
                     <!-- Saving Amount -->
                     <h2>Saving Amount: <span id="save-amount"></span></h2> 
+                    <!-- Error Message -->
+                    <div class="notify-section">
+                        <p id="save-notify">Save percentage is greater than Income!!!</p>
+                    </div>
                     <!-- Remaining Balance -->
                     <h2>Remaining Balance: <span id="remain"></span></h2>
+                    <!-- Error Message -->
+                    <div class="notify-section">
+                        <p id="remain-notify">Saving Amount is greater than Balance!!!</p>
+                    </div>
                 </div>
         </section>
     </main>
